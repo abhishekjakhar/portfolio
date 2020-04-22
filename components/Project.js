@@ -9,7 +9,7 @@ const Project = props => {
   return (
     <article
       className={`u-relative u-backgroundColorWhite u-cursorPointer project`}>
-      <Link href="/project/[id]" as={`/project/${pathname}`}>
+      <Link as={`/projects/${pathname}`} href="/projects/[pathname]">
         <a className="u-block u-width100Percent u-height100Percent">
           <figure className="image">
             <img
