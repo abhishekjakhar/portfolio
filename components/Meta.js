@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { siteTitle, siteDescription } from '../config/website'
+import { siteTitle, siteDescription, siteTitleAlt } from '../config/website'
 
 const Meta = () => (
   <Head>
