@@ -1,9 +1,10 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { lang } from '../config/website'
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
+      <Html lang={lang}>
         <Head />
         <body>
           <Main />
