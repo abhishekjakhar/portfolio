@@ -1,12 +1,7 @@
 import Layout from '../components/Layout'
-import Container from '../components/Container'
 
 const About = () => {
-  return (
-    <Layout>
-      <Container>About</Container>
-    </Layout>
-  )
+  return <Layout>About</Layout>
 }
 
 export default About

@@ -1,8 +1,7 @@
 import { useRouter } from 'next/router'
 import { getProjectBySlug, getAllProjects } from '../../lib/api'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import Layout from '../../components/layout'
+import Layout from '../../components/Layout'
 import ProjectTitle from '../../components/ProjectTitle'
 import ProjectSubTitle from '../../components/ProjectSubTitle'
 import ProjectParagraph from '../../components/ProjectParagraph'
@@ -19,43 +18,41 @@ export default function Post({ project }) {
   })
   return (
     <Layout>
-      <Container>
-        <div className="mb-10 phone-mb-0">
-          <div className="mb-2">
-            <ProjectTitle>{project.title}</ProjectTitle>
+      <div className="mb-10 phone-mb-0">
+        <div className="mb-2">
+          <ProjectTitle>{project.title}</ProjectTitle>
+        </div>
+        <div className="u-flex phone-f-column">
+          <div className="f-1 phone-mb-4">
+            <ProjectSubTitle>{project.subTitle}</ProjectSubTitle>
           </div>
-          <div className="u-flex phone-f-column">
-            <div className="f-1 phone-mb-4">
-              <ProjectSubTitle>{project.subTitle}</ProjectSubTitle>
-            </div>
-            <div className="f-1 u-flex phone-f-column">
-              <div className="f-1 pr-4 phone-pr-0 phone-mb-2">
-                <div className="mb-4 phone-mb-2">
-                  <ProjectParagraph title="Project Type" desc={type} />
-                </div>
-                {project.result ? (
-                  <div>
-                    <ProjectParagraph title="Result" desc={project.result} />
-                  </div>
-                ) : null}
+          <div className="f-1 u-flex phone-f-column">
+            <div className="f-1 pr-4 phone-pr-0 phone-mb-2">
+              <div className="mb-4 phone-mb-2">
+                <ProjectParagraph title="Project Type" desc={type} />
               </div>
-              {project.contribution ? (
-                <div className="f-1 phone-mb-2">
-                  <ProjectParagraph
-                    title="My Contribution"
-                    desc={project.contribution}
-                  />
+              {project.result ? (
+                <div>
+                  <ProjectParagraph title="Result" desc={project.result} />
                 </div>
               ) : null}
             </div>
+            {project.contribution ? (
+              <div className="f-1 phone-mb-2">
+                <ProjectParagraph
+                  title="My Contribution"
+                  desc={project.contribution}
+                />
+              </div>
+            ) : null}
           </div>
         </div>
-        <ProjectBody
-          description={project.description}
-          website={project.website}
-          code={project.code}
-        />
-      </Container>
+      </div>
+      <ProjectBody
+        description={project.description}
+        website={project.website}
+        code={project.code}
+      />
     </Layout>
   )
 }
