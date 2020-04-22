@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
 import { getAllProjects } from '../lib/api'
+import Layout from '../components/Layout'
 import Container from '../components/Container'
 import Project from '../components/Project'
 

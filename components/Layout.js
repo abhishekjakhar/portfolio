@@ -1,7 +1,7 @@
 import Meta from './Meta'
 import Header from './Header'
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }) {
   return (
     <React.Fragment>
       <Meta />
