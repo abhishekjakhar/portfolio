@@ -1,19 +1,24 @@
 import Layout from '../components/Layout'
 import Button from '../components/Button'
 import Link from 'next/link'
+import {
+  errorHeading,
+  errorSubHeadingTop,
+  errorSubHeadingBottom,
+} from '../config/website'
 
 export default function Custom404() {
   return (
     <Layout>
       <div className="pt-16 u-textAlignCenter">
         <h1 className="u-fontSize48 u-phone-fontSize38 u-fontWeightBold u-textColorDarkest u-lineHeight1x u-letterSpacingHalf mb-6">
-          I lost this page
+          {errorHeading}
         </h1>
         <h2
           className={`u-fontSize20 u-phone-fontSize18 u-fontWeightRegular u-textColorDarker u-lineHeight26 u-letterSpacingHalf mb-6`}>
-          I searched high and low but couldn’t find what you’re{' '}
+          {errorSubHeadingTop}
           <br className="u-phoneHide" />
-          looking for. Let’s find a better place for you to go.
+          {errorSubHeadingBottom}
         </h2>
         <Button>
           <Link href="/">

@@ -16,3 +16,9 @@ export const socialLinks = {
   github: 'https://github.com/abhishekjakhar',
   linkedin: 'https://www.linkedin.com/in/abhishekjakhar',
 }
+
+export const errorHeading = 'I lost this page'
+export const errorSubHeadingTop =
+  'I searched high and low but couldn’t find what you’re'
+export const errorSubHeadingBottom =
+  'looking for. Let’s find a better place for you to go.'
