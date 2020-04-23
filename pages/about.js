@@ -31,7 +31,7 @@ const About = () => (
       <div className="mr-8 phone-mr-0 phone-mb-6">
         <div className="u-size220x220 u-phone-width100Percent u-phone-height100Percent u-backgroundColorBlack">
           <img
-            src="/assets/abhishek.png"
+            src="/assets/author/abhishek.png"
             alt="Abhishek Jakhar"
             className="u-width100Percent u-height100Percent u-block"
           />
