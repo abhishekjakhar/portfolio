@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-import Container from '../components/Container'
+import ResumeList from '../components/ResumeList'
 import resume from '../data/resume'
 
 const Resume = () => {
@@ -13,38 +13,26 @@ const Resume = () => {
             Work Experience
           </h2>
         </main>
-        {work.map((resume, index) => {
+        {work.map((work, index) => {
           return (
             <div
               className="u-flex f-row phone-f-column u-textColorDark mb-8 phone-mb-6"
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
                 <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {resume.year}
+                  {work.year}
                 </p>
               </div>
               <div className="u-flex25 phone-mb-2">
                 <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {resume.company}
+                  {work.company}
                 </p>
                 <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {resume.position}
+                  {work.position}
                 </p>
               </div>
               <div className="u-flex50">
-                <ul className="u-listStyleTypeDisc u-textColorDarker pl-4 phone-pl-8">
-                  {resume.achievements.map((item, index) => (
-                    <li
-                      key={index.toString()}
-                      className={`${
-                        resume.achievements.length === index + 1
-                          ? 'mb-0'
-                          : 'mb-1'
-                      } u-fontSize16`}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <ResumeList list={work.list} />
               </div>
             </div>
           )
@@ -76,17 +64,7 @@ const Resume = () => {
                 </p>
               </div>
               <div className="u-flex50">
-                <ul className="u-listStyleTypeDisc u-textColorDarker pl-4 phone-pl-8">
-                  {education.classes.map((item, index) => (
-                    <li
-                      key={index.toString()}
-                      className={`${
-                        education.classes.length === index + 1 ? 'mb-0' : 'mb-1'
-                      } u-fontSize16`}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <ResumeList list={education.list} />
               </div>
             </div>
           )
@@ -110,17 +88,7 @@ const Resume = () => {
                 </p>
               </div>
               <div className="u-flex25 phone-mb-2">
-                <ul className="u-listStyleTypeDisc u-textColorDarker pl-4 phone-pl-8">
-                  {skills.skills.map((item, index) => (
-                    <li
-                      key={index.toString()}
-                      className={`${
-                        skills.skills.length === index + 1 ? 'mb-0' : 'mb-1'
-                      } u-fontSize16`}>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <ResumeList list={skills.list} />
               </div>
             </div>
           )
