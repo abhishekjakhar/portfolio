@@ -1,7 +1,8 @@
-const Hamburger = ({ value, toggleHandler }) => (
+const Hamburger = ({ isCollapsed, toggleHandler }) => (
   <button
-    className={`menu ${value && 'collapsed'}`.trim()}
-    onClick={() => toggleHandler(!value)}>
+    className={`menu ${isCollapsed ? 'collapsed' : 'open'}`.trim()}
+    aria-expanded={!isCollapsed ? 'true' : 'false'}
+    onClick={() => toggleHandler(!isCollapsed)}>
     <div className="menu-bar"></div>
     <div className="menu-bar"></div>
     <div className="menu-bar"></div>

@@ -32,7 +32,9 @@ const Header = () => {
     <header className="u-flex align-items-center u-width100Percent u-height80 u-top0 u-left0 u-backgroundColor u-zIndex9">
       <nav className="u-flex justify-content-between align-items-center u-width100Percent u-height100Percent mx-auto u-maxWidth1140 tabLand-pl-6 tabLand-pr-6 phone-pl-3 phone-pr-3 u-relative u-zIndex5">
         <Link href="/">
-          <a className={`u-fontSize20 u-textColorDarker u-fontWeightBold`}>
+          <a
+            className={`u-fontSize20 u-textColorDarker u-fontWeightBold`}
+            aria-label="Return to homepage">
             Abhishek Jakhar
           </a>
         </Link>
@@ -58,7 +60,7 @@ const Header = () => {
         </ul>
         <div className="u-phoneShow">
           <Hamburger
-            value={isMenuCollapsed}
+            isCollapsed={isMenuCollapsed}
             toggleHandler={setIsMenuCollapsed}
           />
         </div>
