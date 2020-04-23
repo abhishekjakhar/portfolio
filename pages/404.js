@@ -7,7 +7,7 @@ import {
   errorSubHeadingBottom,
 } from '../config/website'
 
-export default function Custom404() {
+export default function FourOFour() {
   return (
     <Layout>
       <div className="pt-16 u-textAlignCenter">

@@ -22,3 +22,12 @@ export const errorSubHeadingTop =
   'I searched high and low but couldn’t find what you’re'
 export const errorSubHeadingBottom =
   'looking for. Let’s find a better place for you to go.'
+
+export const aboutHeading =
+  "Hello, I'm Abhishek Jakhar, a Front-End Developer and Experience Designer."
+export const aboutCopyFirst =
+  'I am a Front-End developer and UX designer, because I am intrinsically a problem solver. I believe that any problem can be solved through design thinking and when it comes to code I believe everything is possible with added complexity.'
+export const aboutCopySecond =
+  'I love to structure things in real-life, because of this quality my design and my code always complement each other.'
+export const aboutCopyThird =
+  "Currently, I develop at VRBO, Expedia. Let's get in touch to see if we can learn something from each other."
