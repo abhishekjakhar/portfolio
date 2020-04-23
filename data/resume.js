@@ -115,7 +115,7 @@ export default {
     },
     {
       type: 'Software',
-      list: ['Git', 'Github', 'Vim', 'Visual Studio Code', 'Sketch', 'Figma'],
+      list: ['Git', 'Github', 'Vim', 'Sketch'],
     },
     {
       type: 'Hobbies',
