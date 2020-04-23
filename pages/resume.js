@@ -1,5 +1,7 @@
 import Layout from '../components/Layout'
 import ResumeList from '../components/ResumeList'
+import ResumeHeading from '../components/ResumeHeading'
+import ResumeCopy from '../components/ResumeCopy'
 import resume from '../data/resume'
 
 const Resume = () => {
@@ -7,29 +9,18 @@ const Resume = () => {
   return (
     <Layout>
       <section>
-        <main className={`mb-2 u-flex align-items-center`}>
-          <h2
-            className={`u-fontSize20 u-phone-fontSize18 u-fontWeightBold u-textColorDarker u-lineHeight26 u-letterSpacingHalf`}>
-            Work Experience
-          </h2>
-        </main>
+        <ResumeHeading>Work Experience</ResumeHeading>
         {work.map((work, index) => {
           return (
             <div
               className="u-flex f-row phone-f-column u-textColorDark mb-8 phone-mb-6"
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {work.year}
-                </p>
+                <ResumeCopy>{work.year}</ResumeCopy>
               </div>
               <div className="u-flex25 phone-mb-2">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {work.company}
-                </p>
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {work.position}
-                </p>
+                <ResumeCopy>{work.company}</ResumeCopy>
+                <ResumeCopy>{work.position}</ResumeCopy>
               </div>
               <div className="u-flex50">
                 <ResumeList list={work.list} />
@@ -39,29 +30,18 @@ const Resume = () => {
         })}
       </section>
       <section>
-        <main className={`mb-2 u-flex align-items-center`}>
-          <h2
-            className={`u-fontSize20 u-phone-fontSize18 u-fontWeightBold u-textColorDarker u-lineHeight26 u-letterSpacingHalf`}>
-            Education
-          </h2>
-        </main>
+        <ResumeHeading>Education</ResumeHeading>
         {education.map((education, index) => {
           return (
             <div
               className="u-flex f-row phone-f-column mb-8 phone-mb-6"
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {education.year}
-                </p>
+                <ResumeCopy>{education.year}</ResumeCopy>
               </div>
               <div className="u-flex25 phone-mb-2">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {education.institution}
-                </p>
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {education.program}
-                </p>
+                <ResumeCopy>{education.institution}</ResumeCopy>
+                <ResumeCopy>{education.program}</ResumeCopy>
               </div>
               <div className="u-flex50">
                 <ResumeList list={education.list} />
@@ -71,21 +51,14 @@ const Resume = () => {
         })}
       </section>
       <section>
-        <main className={`mb-2 u-flex align-items-center`}>
-          <h2
-            className={`u-fontSize20 u-phone-fontSize18 u-fontWeightBold u-textColorDarker u-lineHeight26 u-letterSpacingHalf`}>
-            Skills + Software
-          </h2>
-        </main>
+        <ResumeHeading>Skills + Software</ResumeHeading>
         {skills.map((skills, index) => {
           return (
             <div
               className="u-flex f-row phone-f-column mb-8 phone-mb-6"
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {skills.type}
-                </p>
+                <ResumeCopy>{skills.type}</ResumeCopy>
               </div>
               <div className="u-flex25 phone-mb-2">
                 <ResumeList list={skills.list} />
@@ -95,29 +68,18 @@ const Resume = () => {
         })}
       </section>
       <section>
-        <main className={`mb-2 u-flex align-items-center`}>
-          <h2
-            className={`u-fontSize20 u-phone-fontSize18 u-fontWeightBold u-textColorDarker u-lineHeight26 u-letterSpacingHalf`}>
-            Certifications
-          </h2>
-        </main>
+        <ResumeHeading>Certifications</ResumeHeading>
         {certification.map((certi, index) => {
           return (
             <div
               className="u-flex f-row phone-f-column mb-8 phone-mb-6"
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {certi.year}
-                </p>
+                <ResumeCopy>{certi.year}</ResumeCopy>
               </div>
               <div className="phone-mb-2">
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {certi.institution}
-                </p>
-                <p className="u-textColorDarker fontWeightRegular u-fontSize16">
-                  {certi.program}
-                </p>
+                <ResumeCopy>{certi.institution}</ResumeCopy>
+                <ResumeCopy>{certi.program}</ResumeCopy>
               </div>
             </div>
           )
