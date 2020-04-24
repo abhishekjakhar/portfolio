@@ -6,8 +6,9 @@ import ProjectTitle from '../../components/ProjectTitle'
 import ProjectSubTitle from '../../components/ProjectSubTitle'
 import ProjectParagraph from '../../components/ProjectParagraph'
 import ProjectBody from '../../components/ProjectBody'
+import ProjectNav from '../../components/ProjectNav'
 
-export default function Post({ project }) {
+export default function Post({ project, projects }) {
   const {
     title,
     subTitle,
@@ -59,6 +60,7 @@ export default function Post({ project }) {
         </div>
       </div>
       <ProjectBody description={description} website={website} code={code} />
+      <ProjectNav projects={projects} />
     </Layout>
   )
 }
@@ -77,11 +79,14 @@ export async function getStaticProps({ params }) {
     'type',
   ])
 
+  const allProjects = getAllProjects(['title', 'slug'])
+
   return {
     props: {
       project: {
         ...project,
       },
+      projects: [...allProjects],
     },
   }
 }
