@@ -1,13 +1,20 @@
 import Layout from '../components/Layout'
+import Head from 'next/head'
 import ResumeList from '../components/ResumeList'
 import ResumeHeading from '../components/ResumeHeading'
 import ResumeCopy from '../components/ResumeCopy'
 import resume from '../data/resume'
+import { author, resumePage } from '../config/website'
 
 const Resume = () => {
   const { work, education, skills, certification } = resume
   return (
     <Layout>
+      <Head>
+        <title>
+          {resumePage} | {author}
+        </title>
+      </Head>
       <section>
         <ResumeHeading>Work Experience</ResumeHeading>
         {work.map((work, index) => {

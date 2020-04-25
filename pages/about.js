@@ -1,10 +1,14 @@
 import React from 'react'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
 import {
   aboutHeading,
   aboutCopyFirst,
   aboutCopySecond,
   aboutCopyThird,
+  author,
+  aboutPage,
 } from '../config/website'
 
 const socialMenu = [
@@ -27,6 +31,11 @@ const socialMenu = [
 
 const About = () => (
   <Layout>
+    <Head>
+      <title>
+        {aboutPage} | {author}
+      </title>
+    </Head>
     <div className="mb-12 u-flex phone-f-column">
       <div className="mr-8 phone-mr-0 phone-mb-6">
         <div className="u-size220x220 u-phone-width100Percent u-phone-height100Percent u-backgroundColorBlack">

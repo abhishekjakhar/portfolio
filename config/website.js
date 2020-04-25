@@ -31,3 +31,6 @@ export const aboutCopySecond =
   'I love to structure things in real-life, because of this quality my design and my code always complement each other.'
 export const aboutCopyThird =
   "Currently, I develop at VRBO, Expedia. Let's get in touch to see if we can learn something from each other."
+export const aboutPage = 'About'
+export const resumePage = 'Resume'
+export const blogPage = 'Blogs'
