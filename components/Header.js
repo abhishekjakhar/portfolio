@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import ActiveLink from './ActiveLink'
 import Hamburger from './Hamburger'
+import ThemeSwitch from './ThemSwitch'
 
 const navigation = [
   {
@@ -57,6 +58,9 @@ const Header = () => {
               </ActiveLink>
             </li>
           ))}
+          <li className="ml-5 phone-ml-3">
+            <ThemeSwitch />
+          </li>
         </ul>
         <div className="u-phoneShow">
           <Hamburger
