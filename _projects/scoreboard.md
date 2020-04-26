@@ -7,6 +7,7 @@ contribution: ''
 description:
   - type: 'image'
     value: '/assets/projects/scoreboard/scoreboard-hero.png'
+    title: 'Scoreboard'
 website: 'https://react-score.netlify.com'
 code: 'https://github.com/abhishekjakhar/scoreboard'
 type:

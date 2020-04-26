@@ -12,6 +12,7 @@ contribution:
 description:
   - type: 'image'
     value: '/assets/projects/transition-gallery/transition-gallery-hero.png'
+    title: 'Transition gallery'
 website: 'https://transition-gallery.netlify.com'
 code: 'https://github.com/abhishekjakhar/gallery'
 type:
