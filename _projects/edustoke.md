@@ -10,8 +10,10 @@ contribution:
 description:
   - type: 'image'
     value: '/assets/projects/edustoke/edustoke-image-1.png'
+    title: 'Edustoke'
   - type: 'image'
     value: '/assets/projects/edustoke/edustoke-image-2.png'
+    title: 'Edustoke'
 website: 'https://www.edustoke.com/'
 code: ''
 type:

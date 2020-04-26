@@ -12,8 +12,10 @@ contribution:
 description:
   - type: 'image'
     value: '/assets/projects/cask/cask-hero.png'
+    title: 'CASK'
   - type: 'image'
     value: '/assets/projects/cask/cask-image-1.png'
+    title: 'CASK'
 website: 'https://www.caskassociates.com'
 code: 'https://github.com/abhishekjakhar/scoreboard'
 type:

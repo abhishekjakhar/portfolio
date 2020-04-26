@@ -13,10 +13,13 @@ contribution:
 description:
   - type: 'image'
     value: '/assets/projects/yuva-chatbot/chatbot-hero.png'
+    title: 'Yuva Chatbot'
   - type: 'image'
     value: '/assets/projects/yuva-chatbot/chatbot-image-1.png'
+    title: 'Yuva Chatbot'
   - type: 'image'
     value: '/assets/projects/yuva-chatbot/chatbot-image-2.png'
+    title: 'Yuva Chatbot'
 website: 'https://www.yatra.com'
 code: ''
 type:

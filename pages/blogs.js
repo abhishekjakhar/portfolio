@@ -1,11 +1,17 @@
 import Layout from '../components/Layout'
+import Head from 'next/head'
 import Blog from '../components/Blog'
-import Container from '../components/Container'
 import blogs from '../data/blogs'
+import { author, blogPage } from '../config/website'
 
 const Blogs = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {blogPage} | {author}
+        </title>
+      </Head>
       {blogs.map(b => (
         <section
           className={b.id === b.length ? null : 'mb-8 phone-mb-6'}

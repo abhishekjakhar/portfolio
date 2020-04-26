@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { getProjectBySlug, getAllProjects } from '../../lib/api'
+import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Layout from '../../components/Layout'
 import ProjectTitle from '../../components/ProjectTitle'
@@ -32,6 +33,9 @@ export default function Post({ project, projects }) {
 
   return (
     <Layout>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <div className="mb-10 phone-mb-0">
         <div className="mb-2">
           <ProjectTitle>{title}</ProjectTitle>
