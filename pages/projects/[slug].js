@@ -8,6 +8,7 @@ import ProjectSubTitle from '../../components/ProjectSubTitle'
 import ProjectParagraph from '../../components/ProjectParagraph'
 import ProjectBody from '../../components/ProjectBody'
 import ProjectNav from '../../components/ProjectNav'
+import Divider from '../../components/Divider'
 
 export default function Post({ project, projects }) {
   const {
@@ -64,6 +65,7 @@ export default function Post({ project, projects }) {
         </div>
       </div>
       <ProjectBody description={description} website={website} code={code} />
+      <Divider />
       <ProjectNav projects={projects} />
     </Layout>
   )

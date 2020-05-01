@@ -41,7 +41,7 @@ const Resume = () => {
           )
         })}
       </section>
-      <Divider />
+      <Divider large />
       <section>
         <ResumeHeading>Education</ResumeHeading>
         {education.map((e, index) => {
@@ -65,7 +65,7 @@ const Resume = () => {
           )
         })}
       </section>
-      <Divider />
+      <Divider large />
       <section>
         <ResumeHeading>Skills + Software</ResumeHeading>
         {skills.map((s, index) => {
@@ -85,7 +85,7 @@ const Resume = () => {
           )
         })}
       </section>
-      <Divider />
+      <Divider large />
       <section>
         <ResumeHeading>Certifications</ResumeHeading>
         {certification.map((c, index) => {

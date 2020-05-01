@@ -4,10 +4,10 @@ import ActiveLink from './ActiveLink'
 const ProjectNav = ({ projects }) => {
   return (
     <nav>
-      <ul className="u-flex f-row f-wrap">
+      <ul className="u-flex f-row f-wrap justify-content-between">
         {projects.map((project, index) => {
           return (
-            <li key={index} className="mr-4">
+            <li key={index}>
               <ActiveLink
                 as={`/projects/${project.slug}`}
                 href="/projects/[pathname]">

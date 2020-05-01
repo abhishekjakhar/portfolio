@@ -2,7 +2,7 @@ import Button from './Button'
 
 export default function ProjectBody({ description, website, code }) {
   return (
-    <article className="mb-10">
+    <article>
       {description.map((element, index) => {
         let innerContent = null
         if (element.type === 'image') {
@@ -38,13 +38,9 @@ export default function ProjectBody({ description, website, code }) {
           </div>
         )
       })}
-      <div className="u-flex phone-mt-8">
+      <div className="u-flex phone-f-column phone-mt-8">
         {website && <Button website={website}>Project</Button>}
-        {code && (
-          <div className="ml-4">
-            <Button website={code}>Code</Button>
-          </div>
-        )}
+        {code && <Button website={code}>Code</Button>}
       </div>
     </article>
   )
