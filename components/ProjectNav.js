@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import ActiveLink from './ActiveLink'
 
 const ProjectNav = ({ projects }) => {
@@ -22,6 +23,15 @@ const ProjectNav = ({ projects }) => {
       </ul>
     </nav>
   )
+}
+
+ProjectNav.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      slug: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 }
 
 export default ProjectNav

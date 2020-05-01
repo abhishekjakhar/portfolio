@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function ResumeHeading({ children }) {
   return (
     <main className={`mb-2 u-flex align-items-center`}>
@@ -7,4 +9,8 @@ export default function ResumeHeading({ children }) {
       </h2>
     </main>
   )
+}
+
+ResumeHeading.propType = {
+  children: PropTypes.element.isRequired,
 }

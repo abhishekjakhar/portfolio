@@ -1,12 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Button = props => (
+const Button = ({ children, website }) => (
   <a
     className="btn btn-cta"
-    href={props.website}
+    href={website}
     target="_blank"
     rel="noopener noreferrer">
-    {props.children}
+    {children}
     <style jsx>{`
       .btn {
         width: auto;
@@ -38,5 +39,10 @@ const Button = props => (
     `}</style>
   </a>
 )
+
+Button.propType = {
+  children: PropTypes.element.isRequired,
+  website: PropTypes.string.isRequired,
+}
 
 export default Button

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function ProjectParagraph({ title, desc }) {
   return (
     <React.Fragment>
@@ -11,4 +13,9 @@ export default function ProjectParagraph({ title, desc }) {
       </p>
     </React.Fragment>
   )
+}
+
+ProjectParagraph.propTypes = {
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
 }
