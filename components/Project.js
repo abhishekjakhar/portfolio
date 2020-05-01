@@ -22,7 +22,7 @@ const Project = props => {
         </a>
       </Link>
       <div className="u-absolute u-flex justify-content-center align-items-center u-textAlignCenter text-container">
-        <h2 className="u-fontSize42 u-textColorDarker u-fontWeightRegular">
+        <h2 className="u-fontSize42 u-phone-fontSize30 u-textColorDarker u-fontWeightRegular">
           {title}
         </h2>
         <div>

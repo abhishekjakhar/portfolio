@@ -19,22 +19,30 @@ const Button = ({ children, website }) => (
         border: 0;
       }
 
+      .btn:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      @media only screen and (max-width: 37.5em) {
+        .btn:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 1.2rem;
+        }
+      }
+
       .btn-cta {
+        line-height: 1;
         min-width: 12rem;
-        padding: 1rem 2.2rem;
-        font-size: 1.6rem;
+        padding: 1.4rem 2.2rem;
+        font-size: 1.8rem;
         font-weight: 600;
         letter-spacing: 1.2px;
-        color: var(--color-white);
-        background-color: var(--color-black);
-        opacity: 0.8;
+        color: var(--text-color-darker);
+        background-color: var(--color-gray);
+        border: 1px solid #e1e3e6;
         -webkit-transition: opacity 400ms;
         -o-transition: opacity 400ms;
         transition: opacity 400ms;
-      }
-
-      .btn-cta:hover {
-        opacity: 1;
       }
     `}</style>
   </a>
