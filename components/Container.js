@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Container = props => (
   <div
@@ -6,5 +7,9 @@ const Container = props => (
     {props.children}
   </div>
 )
+
+Container.propType = {
+  children: PropTypes.element.isRequired,
+}
 
 export default Container

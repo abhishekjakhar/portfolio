@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 
 const Project = props => {
   const { title, type, image, pathname } = props
@@ -68,6 +69,13 @@ const Project = props => {
       `}</style>
     </article>
   )
+}
+
+Project.propTypes = {
+  title: PropTypes.string.isRequired,
+  type: PropTypes.arrayOf(PropTypes.string).isRequired,
+  image: PropTypes.string.isRequired,
+  pathname: PropTypes.string.isRequired,
 }
 
 export default Project

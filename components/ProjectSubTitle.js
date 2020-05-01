@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function ProjectSubTitle({ children }) {
   return (
     <div className="u-width80Percent u-phone-width100Percent">
@@ -6,4 +8,8 @@ export default function ProjectSubTitle({ children }) {
       </h2>
     </div>
   )
+}
+
+ProjectSubTitle.propType = {
+  children: PropTypes.element.isRequired,
 }

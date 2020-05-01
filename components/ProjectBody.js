@@ -1,4 +1,5 @@
 import Button from './Button'
+import PropTypes from 'prop-types'
 
 export default function ProjectBody({ description, website, code }) {
   return (
@@ -44,4 +45,16 @@ export default function ProjectBody({ description, website, code }) {
       </div>
     </article>
   )
+}
+
+ProjectBody.propTypes = {
+  description: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string.isRequired,
+      value: PropTypes.string,
+      title: PropTypes.string,
+    }),
+  ).isRequired,
+  website: PropTypes.string,
+  code: PropTypes.string,
 }

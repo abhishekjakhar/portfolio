@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const Hamburger = ({ isCollapsed, toggleHandler }) => (
   <button
     className={`menu ${isCollapsed ? 'collapsed' : 'open'}`.trim()}
@@ -46,5 +48,10 @@ const Hamburger = ({ isCollapsed, toggleHandler }) => (
     `}</style>
   </button>
 )
+
+Hamburger.propTypes = {
+  isCollapsed: PropTypes.bool.isRequired,
+  toggleHandler: PropTypes.func.isRequired,
+}
 
 export default Hamburger
