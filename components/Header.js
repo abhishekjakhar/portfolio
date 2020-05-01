@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import ActiveLink from './ActiveLink'
 import Hamburger from './Hamburger'
-import ThemeSwitch from './ThemSwitch'
+import ThemeSwitch from './ThemeSwitch'
 
 const navigation = [
   {
