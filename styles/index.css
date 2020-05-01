@@ -326,6 +326,9 @@ a {
   .u-phone-fontSize18 {
     font-size: 1.8rem;
   }
+  .u-phone-fontSize30 {
+    font-size: 3rem;
+  }
   .u-phone-fontSize34 {
     font-size: 3.4rem;
   }
@@ -383,6 +386,12 @@ a {
 /********** MARGIN TOP **********/
 .mt-2 {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .phone-mt-8 {
+    margin-top: 4rem;
+  }
 }
 
 /********** MARGIN RIGHT **********/
@@ -443,6 +452,9 @@ a {
   }
   .phone-mb-6 {
     margin-bottom: 3rem;
+  }
+  .phone-mb-8 {
+    margin-bottom: 4rem;
   }
 }
 

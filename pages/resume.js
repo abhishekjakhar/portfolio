@@ -3,6 +3,7 @@ import Head from 'next/head'
 import ResumeList from '../components/ResumeList'
 import ResumeHeading from '../components/ResumeHeading'
 import ResumeCopy from '../components/ResumeCopy'
+import Divider from '../components/Divider'
 import resume from '../data/resume'
 import { author, resumePage } from '../config/website'
 
@@ -17,76 +18,89 @@ const Resume = () => {
       </Head>
       <section>
         <ResumeHeading>Work Experience</ResumeHeading>
-        {work.map((work, index) => {
+        {work.map((w, index) => {
+          console.log(work.length)
+          console.log(index)
           return (
             <div
-              className="u-flex f-row phone-f-column u-textColorDark mb-8 phone-mb-6"
+              className={`u-flex f-row phone-f-column u-textColorDark ${
+                work.length === index + 1 ? '' : 'mb-8 phone-mb-6'
+              }`.trim('')}
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <ResumeCopy>{work.year}</ResumeCopy>
+                <ResumeCopy>{w.year}</ResumeCopy>
               </div>
               <div className="u-flex25 phone-mb-2">
-                <ResumeCopy>{work.company}</ResumeCopy>
-                <ResumeCopy>{work.position}</ResumeCopy>
+                <ResumeCopy>{w.company}</ResumeCopy>
+                <ResumeCopy>{w.position}</ResumeCopy>
               </div>
               <div className="u-flex50">
-                <ResumeList list={work.list} />
+                <ResumeList list={w.list} />
               </div>
             </div>
           )
         })}
       </section>
+      <Divider />
       <section>
         <ResumeHeading>Education</ResumeHeading>
-        {education.map((education, index) => {
+        {education.map((e, index) => {
           return (
             <div
-              className="u-flex f-row phone-f-column mb-8 phone-mb-6"
+              className={`u-flex f-row phone-f-column ${
+                education.length === index + 1 ? '' : 'mb-8 phone-mb-6'
+              }`.trim('')}
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <ResumeCopy>{education.year}</ResumeCopy>
+                <ResumeCopy>{e.year}</ResumeCopy>
               </div>
               <div className="u-flex25 phone-mb-2">
-                <ResumeCopy>{education.institution}</ResumeCopy>
-                <ResumeCopy>{education.program}</ResumeCopy>
+                <ResumeCopy>{e.institution}</ResumeCopy>
+                <ResumeCopy>{e.program}</ResumeCopy>
               </div>
               <div className="u-flex50">
-                <ResumeList list={education.list} />
+                <ResumeList list={e.list} />
               </div>
             </div>
           )
         })}
       </section>
+      <Divider />
       <section>
         <ResumeHeading>Skills + Software</ResumeHeading>
-        {skills.map((skills, index) => {
+        {skills.map((s, index) => {
           return (
             <div
-              className="u-flex f-row phone-f-column mb-8 phone-mb-6"
+              className={`u-flex f-row phone-f-column ${
+                skills.length === index + 1 ? '' : 'mb-8 phone-mb-6'
+              }`.trim('')}
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <ResumeCopy>{skills.type}</ResumeCopy>
+                <ResumeCopy>{s.type}</ResumeCopy>
               </div>
               <div className="u-flex25 phone-mb-2">
-                <ResumeList list={skills.list} />
+                <ResumeList list={s.list} />
               </div>
             </div>
           )
         })}
       </section>
+      <Divider />
       <section>
         <ResumeHeading>Certifications</ResumeHeading>
-        {certification.map((certi, index) => {
+        {certification.map((c, index) => {
           return (
             <div
-              className="u-flex f-row phone-f-column mb-8 phone-mb-6"
+              className={`u-flex f-row phone-f-column ${
+                certification.length === index + 1 ? '' : 'mb-8 phone-mb-6'
+              }`.trim('')}
               key={index.toString()}>
               <div className="u-flex15 phone-mb-1">
-                <ResumeCopy>{certi.year}</ResumeCopy>
+                <ResumeCopy>{c.year}</ResumeCopy>
               </div>
               <div className="phone-mb-2">
-                <ResumeCopy>{certi.institution}</ResumeCopy>
-                <ResumeCopy>{certi.program}</ResumeCopy>
+                <ResumeCopy>{c.institution}</ResumeCopy>
+                <ResumeCopy>{c.program}</ResumeCopy>
               </div>
             </div>
           )

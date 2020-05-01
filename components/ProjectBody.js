@@ -38,7 +38,7 @@ export default function ProjectBody({ description, website, code }) {
           </div>
         )
       })}
-      <div className="u-flex">
+      <div className="u-flex phone-mt-8">
         {website && <Button website={website}>Project</Button>}
         {code && (
           <div className="ml-4">

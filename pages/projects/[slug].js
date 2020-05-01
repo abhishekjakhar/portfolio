@@ -41,22 +41,22 @@ export default function Post({ project, projects }) {
           <ProjectTitle>{title}</ProjectTitle>
         </div>
         <div className="u-flex phone-f-column">
-          <div className="f-1 phone-mb-4">
+          <div className="f-1 phone-mb-6">
             <ProjectSubTitle>{subTitle}</ProjectSubTitle>
           </div>
-          <div className="f-1 u-flex phone-f-column">
-            <div className="f-1 pr-4 phone-pr-0 phone-mb-2">
-              <div className="mb-4 phone-mb-2">
+          <div className="f-1 u-flex phone-f-column phone-mb-8">
+            <div className="f-1 pr-4 phone-pr-0 phone-mb-0">
+              <div className="mb-4">
                 <ProjectParagraph title="Project Type" desc={updatedType} />
               </div>
               {result ? (
-                <div>
+                <div className="phone-mb-4">
                   <ProjectParagraph title="Result" desc={result} />
                 </div>
               ) : null}
             </div>
             {contribution ? (
-              <div className="f-1 phone-mb-2">
+              <div className="f-1">
                 <ProjectParagraph title="My Contribution" desc={contribution} />
               </div>
             ) : null}
