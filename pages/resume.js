@@ -19,8 +19,6 @@ const Resume = () => {
       <section>
         <ResumeHeading>Work Experience</ResumeHeading>
         {work.map((w, index) => {
-          console.log(work.length)
-          console.log(index)
           return (
             <div
               className={`u-flex f-row phone-f-column u-textColorDark ${
