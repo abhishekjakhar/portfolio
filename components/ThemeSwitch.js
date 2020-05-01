@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 
+import * as gtag from '../lib/gtag'
+
 const ThemeSwitch = () => {
   let body = ''
   useEffect(() => {
@@ -8,13 +10,21 @@ const ThemeSwitch = () => {
 
   const handleThemeChange = e => {
     const isChecked = event.target.checked
+    let eventLabel = ''
     if (isChecked) {
       body.classList.remove('light')
       body.classList.add('dark')
+      eventLabel = 'Dark'
     } else {
       body.classList.remove('dark')
       body.classList.add('light')
+      eventLabel = 'Light'
     }
+    gtag.event({
+      action: 'theme_change',
+      category: 'Theme',
+      label: eventLabel,
+    })
   }
 
   return (
