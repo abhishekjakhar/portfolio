@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 export default function ResumeList({ list }) {
   return (
     <ul className="u-listStyleTypeDisc u-textColorDarker pl-4 phone-pl-8">
@@ -12,4 +14,8 @@ export default function ResumeList({ list }) {
       ))}
     </ul>
   )
+}
+
+ResumeList.propType = {
+  list: PropTypes.arrayOf(PropTypes.string),
 }

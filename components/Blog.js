@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Blog = props => {
   const { link, title, date, readTime, publication } = props
@@ -28,6 +29,14 @@ const Blog = props => {
       </a>
     </article>
   )
+}
+
+Blog.propTypes = {
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  readTime: PropTypes.number.isRequired,
+  publication: PropTypes.string.isRequired,
 }
 
 export default Blog

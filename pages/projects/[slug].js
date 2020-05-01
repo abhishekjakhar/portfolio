@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { getProjectBySlug, getAllProjects } from '../../lib/api'
+import PropTypes from 'prop-types'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Layout from '../../components/Layout'
@@ -9,7 +10,7 @@ import ProjectParagraph from '../../components/ProjectParagraph'
 import ProjectBody from '../../components/ProjectBody'
 import ProjectNav from '../../components/ProjectNav'
 
-export default function Post({ project, projects }) {
+export default function Project({ project, projects }) {
   const {
     title,
     subTitle,
@@ -26,10 +27,7 @@ export default function Post({ project, projects }) {
     return <ErrorPage statusCode={404} />
   }
 
-  const updatedType = type.map((type, i) => {
-    if (type.length === i + 1) return type
-    return type + ', '
-  })
+  const updatedType = type.join(', ')
 
   return (
     <Layout>
@@ -67,6 +65,25 @@ export default function Post({ project, projects }) {
       <ProjectNav projects={projects} />
     </Layout>
   )
+}
+
+Project.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string,
+    subTitle: PropTypes.string,
+    type: PropTypes.arrayOf(PropTypes.string),
+    result: PropTypes.string,
+    contribution: PropTypes.string,
+    description: PropTypes.array,
+    website: PropTypes.string,
+    code: PropTypes.string,
+  }),
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      slug: PropTypes.string,
+    }),
+  ),
 }
 
 export async function getStaticProps({ params }) {
