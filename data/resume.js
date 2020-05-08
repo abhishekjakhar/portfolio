@@ -39,8 +39,9 @@ export default {
       company: 'Expedia Group',
       position: 'Software Development Engineer',
       list: [
+        'Working on post booking experience.',
         'Delivered a tech talk on React Hooks.',
-        'Working on React and GraphQL.',
+        'Worked on checkout page and A/B test around it.',
       ],
     },
     {
@@ -49,8 +50,7 @@ export default {
       position: 'UI/UX Engineer',
       list: [
         'Designed, developed and launched chatbot for Yatra support using React, Redux and custom Tailwind CSS(750 lines only) within a 2 month sprint.',
-        'Developed Quicksilver the complete redesign of Yatra using React, Redux and custom Tailwind CSS from scratch with one more developer, designer and my manager, we together created new design and flow for Flights & Hotels providing very smooth and extremely fast Single page application. Our React code was fully responsive thereby eliminating the need of PWA. We wrote CSS using Tailwind thus making CSS extremely efficient, scalable and maintainable, CSS reflected our design guidelines. We used libraries like react-virtualized to make the scrolling long list of flights/hotels very smooth. We used cleave.js, react-cookie, react-transition-group etc. Components like Accordion, Carousel were made from scratch to avoid importing heavy libraries. Created NodeJS controller to server sider render the payments page.',
-        'Reduced project times 50% by consolidating Sketch symbols into one master library.',
+        'Developed Quicksilver the complete redesign of Yatra using React, Redux and custom Tailwind CSS from scratch with one more developer, designer and my manager, we together created new design and flow for Flights & Hotels providing very smooth and extremely fast single page application. CSS reflected our design guidelines. We made our own components to avoid importing heavy libraries',
       ],
     },
     {
@@ -84,7 +84,7 @@ export default {
   ],
   skills: [
     {
-      type: 'Development Skills',
+      type: 'Development',
       list: [
         'React',
         'Next',
@@ -102,7 +102,7 @@ export default {
       ],
     },
     {
-      type: 'Design Skills',
+      type: 'Design',
       list: [
         'UX design',
         'Problem solving',

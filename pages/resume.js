@@ -32,14 +32,14 @@ const Resume = () => {
                 <ResumeCopy>{w.company}</ResumeCopy>
                 <ResumeCopy>{w.position}</ResumeCopy>
               </div>
-              <div className="u-flex50">
+              <div className="u-width100Percent">
                 <ResumeList list={w.list} />
               </div>
             </div>
           )
         })}
       </section>
-      <Divider large />
+      <Divider />
       <section>
         <ResumeHeading>Education</ResumeHeading>
         {education.map((e, index) => {
@@ -63,7 +63,7 @@ const Resume = () => {
           )
         })}
       </section>
-      <Divider large />
+      <Divider />
       <section>
         <ResumeHeading>Skills + Software</ResumeHeading>
         {skills.map((s, index) => {
@@ -83,7 +83,7 @@ const Resume = () => {
           )
         })}
       </section>
-      <Divider large />
+      <Divider />
       <section>
         <ResumeHeading>Certifications</ResumeHeading>
         {certification.map((c, index) => {

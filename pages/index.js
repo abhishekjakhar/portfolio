@@ -21,13 +21,13 @@ export default function Home({ projects }) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: auto;
-            grid-gap: 5rem;
+            grid-gap: 6rem;
           }
 
           @media only screen and (max-width: 37.5em) {
             .project-grid {
               grid-template-columns: repeat(1, 1fr);
-              grid-gap: 2.5rem 0;
+              grid-gap: 2.4rem 0;
             }
           }
         `}</style>

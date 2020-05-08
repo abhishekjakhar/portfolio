@@ -67,7 +67,7 @@ body.dark {
     0 3px 6px rgba(255, 255, 255, 0.2);
   --bg-color-gray: #fafafa;
   --color-gray: #282c35;
-  --bg-color: #282c35;
+  --bg-color: #171923;
 }
 
 #root {
@@ -269,8 +269,8 @@ a {
 .u-width100Percent {
   width: 100%;
 }
-.u-maxWidth1140 {
-  max-width: 1140px;
+.u-maxWidth980 {
+  max-width: 980px;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -313,6 +313,9 @@ a {
 }
 .u-fontSize32 {
   font-size: 3.2rem;
+}
+.u-fontSize38 {
+  font-size: 3.8rem;
 }
 .u-fontSize42 {
   font-size: 4.2rem;

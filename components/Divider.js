@@ -6,7 +6,7 @@ const Divider = props => (
       div {
         height: 1px;
         width: 100%;
-        margin: ${'large' in props ? '8' : '6'}rem 0;
+        margin: 6rem 0;
         background-color: rgba(0, 0, 0, 0.1);
       }
     `}</style>
