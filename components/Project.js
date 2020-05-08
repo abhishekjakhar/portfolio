@@ -8,7 +8,7 @@ const Project = props => {
   const typeLength = props.type.length
 
   return (
-    <article className="u-relative u-backgroundColorWhite u-cursorPointer project">
+    <article className="u-relative u-cursorPointer project">
       <Link as={`/projects/${pathname}`} href="/projects/[pathname]">
         <a className="u-block u-width100Percent u-height100Percent">
           <figure className="image">
