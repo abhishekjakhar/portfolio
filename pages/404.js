@@ -1,6 +1,6 @@
+import Link from 'next/link'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
-import Link from 'next/link'
 import {
   errorHeading,
   errorSubHeadingTop,
@@ -14,8 +14,7 @@ export default function FourOFour() {
         <h1 className="u-fontSize48 u-phone-fontSize38 u-fontWeightBold u-textColorDarkest u-lineHeight1x u-letterSpacingHalf mb-6">
           {errorHeading}
         </h1>
-        <h2
-          className={`u-fontSize20 u-phone-fontSize18 u-fontWeightRegular u-textColorDarker u-lineHeight26 u-letterSpacingHalf mb-6`}>
+        <h2 className="u-fontSize20 u-phone-fontSize18 u-fontWeightRegular u-textColorDarker u-lineHeight26 u-letterSpacingHalf mb-6">
           {errorSubHeadingTop}
           <br className="u-phoneHide" />
           {errorSubHeadingBottom}

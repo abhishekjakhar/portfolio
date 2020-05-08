@@ -7,9 +7,9 @@ export default function Home({ projects }) {
     <Layout>
       <div className="project-grid">
         {projects.length > 0 &&
-          projects.map((p, id) => (
+          projects.map(p => (
             <Project
-              key={id}
+              key={p.slug}
               title={p.title}
               type={p.type}
               image={p.coverImage}

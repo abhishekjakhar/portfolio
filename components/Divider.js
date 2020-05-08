@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Divider = props => (
+const Divider = () => (
   <div>
     <style jsx>{`
       div {

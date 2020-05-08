@@ -1,23 +1,32 @@
-import { useEffect } from 'react'
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import { useState, useLayoutEffect } from 'react'
 
 import * as gtag from '../lib/gtag'
 
 const ThemeSwitch = () => {
+  const [siteTheme, setSiteTheme] = useState('light')
   let body = ''
-  useEffect(() => {
+  useLayoutEffect(() => {
     body = window.document.body
+    if (body.classList.contains('dark')) {
+      setSiteTheme('dark')
+    } else {
+      setSiteTheme('light')
+    }
   })
 
   const handleThemeChange = e => {
-    const isChecked = event.target.checked
+    const isChecked = e.target.checked
     let eventLabel = ''
     if (isChecked) {
       body.classList.remove('light')
       body.classList.add('dark')
+      setSiteTheme('dark')
       eventLabel = 'Dark'
     } else {
       body.classList.remove('dark')
       body.classList.add('light')
+      setSiteTheme('light')
       eventLabel = 'Light'
     }
     gtag.event({
@@ -32,14 +41,13 @@ const ThemeSwitch = () => {
       <input
         className="switch__input"
         type="checkbox"
+        name="switch"
         id="switch"
+        checked={siteTheme === 'dark'}
         onChange={handleThemeChange}
       />
-      <label
-        aria-hidden="true"
-        className="switch__label"
-        htmlFor="switch"></label>
-      <div aria-hidden="true" className="switch__marker"></div>
+      <label aria-hidden="true" className="switch__label" htmlFor="switch" />
+      <div aria-hidden="true" className="switch__marker" />
       <style jsx>
         {`
           --switch-width: 44px;

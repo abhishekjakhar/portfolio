@@ -8,8 +8,7 @@ const Project = props => {
   const typeLength = props.type.length
 
   return (
-    <article
-      className={`u-relative u-backgroundColorWhite u-cursorPointer project`}>
+    <article className="u-relative u-backgroundColorWhite u-cursorPointer project">
       <Link as={`/projects/${pathname}`} href="/projects/[pathname]">
         <a className="u-block u-width100Percent u-height100Percent">
           <figure className="image">
@@ -27,9 +26,9 @@ const Project = props => {
         </h2>
         <div>
           <p className="u-fontSize20 u-textColorDark u-fontWeightRegular">
-            {type.map((type, i) => {
+            {type.map((t, i) => {
               if (typeLength === i + 1) return type
-              return type + ' / '
+              return `${t} / `
             })}
           </p>
         </div>

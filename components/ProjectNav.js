@@ -6,14 +6,13 @@ const ProjectNav = ({ projects }) => {
   return (
     <nav>
       <ul className="u-flex f-row f-wrap">
-        {projects.map((project, index) => {
+        {projects.map(project => {
           return (
-            <li key={index}>
+            <li key={project.slug}>
               <ActiveLink
                 as={`/projects/${project.slug}`}
                 href="/projects/[pathname]">
-                <a
-                  className={`u-fontSize20 u-fontWeightBold u-textColorDarkerHover u-transition-all300Custom`}>
+                <a className="u-fontSize20 u-fontWeightBold u-textColorDarkerHover u-transition-all300Custom">
                   {project.title}
                 </a>
               </ActiveLink>

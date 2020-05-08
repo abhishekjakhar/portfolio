@@ -26,7 +26,7 @@ const navigation = [
 const Header = () => {
   const [isMenuCollapsed, setIsMenuCollapsed] = useState(true)
 
-  let mobileLinkClass =
+  const mobileLinkClass =
     'u-fontSize28 u-textColorNormal u-textColorDarkerHover u-width100Percent u-transition--transform300Spring'
 
   return (
@@ -34,7 +34,7 @@ const Header = () => {
       <nav className="u-flex justify-content-between align-items-center u-width100Percent u-height100Percent mx-auto u-maxWidth980 tabLand-pl-6 tabLand-pr-6 phone-pl-3 phone-pr-3 u-relative u-zIndex5">
         <Link href="/">
           <a
-            className={`u-fontSize20 u-textColorDarker u-fontWeightBold`}
+            className="u-fontSize20 u-textColorDarker u-fontWeightBold"
             aria-label="Return to homepage">
             Abhishek Jakhar
           </a>
@@ -42,7 +42,7 @@ const Header = () => {
         <ul className="u-lineHeight12 u-flex align-items-end justify-content-between u-phoneHide">
           {navigation.map((item, index) => (
             <li
-              key={index}
+              key={item}
               className={
                 index === 0
                   ? 'u-lineHeight12'
@@ -73,10 +73,10 @@ const Header = () => {
         <div className="u-fixed u-backgroundColorWhite u-bottom0 u-left0 u-width100Percent u-height100Percent u-zIndex1">
           <nav className="u-relative u-width100Percent u-height100Percent">
             <ul className="u-flex f-column align-items-center u-width100Percent u-absolute u-top50Percent u-transformYNegative50pct">
-              {navigation.map((item, index) => (
+              {navigation.map(item => (
                 <li
                   className="u-width100Percent u-textAlignCenter pt-2 pb-2"
-                  key={index}>
+                  key={item}>
                   <ActiveLink
                     activeClassName="u-textColorDarkest"
                     href={item.link}

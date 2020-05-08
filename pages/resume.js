@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import ResumeList from '../components/ResumeList'
 import ResumeHeading from '../components/ResumeHeading'
 import ResumeCopy from '../components/ResumeCopy'

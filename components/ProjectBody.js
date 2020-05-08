@@ -1,5 +1,5 @@
-import Button from './Button'
 import PropTypes from 'prop-types'
+import Button from './Button'
 
 export default function ProjectBody({ description, website, code }) {
   return (
@@ -12,14 +12,14 @@ export default function ProjectBody({ description, website, code }) {
               <img
                 src={element.value}
                 alt={element.title}
-                className={`u-width100Percent u-height100Percent u-block mx-auto`}
+                className="u-width100Percent u-height100Percent u-block mx-auto"
                 key={index.toString()}
               />
             </figure>
           )
         } else if (element.type === 'message') {
           innerContent = (
-            <React.Fragment>
+            <>
               {element.title && (
                 <div className="mb-2">
                   <h3 className="u-fontSize24 u-fontWeightRegular u-textColorDarker">
@@ -30,7 +30,7 @@ export default function ProjectBody({ description, website, code }) {
               <p className="u-fontSize16 u-fontWeightRegular u-textColorDarker">
                 {element.value}
               </p>
-            </React.Fragment>
+            </>
           )
         }
         return (
@@ -45,6 +45,11 @@ export default function ProjectBody({ description, website, code }) {
       </div>
     </article>
   )
+}
+
+ProjectBody.defaultProps = {
+  website: false,
+  code: false,
 }
 
 ProjectBody.propTypes = {

@@ -1,5 +1,5 @@
-import Layout from '../components/Layout'
 import Head from 'next/head'
+import Layout from '../components/Layout'
 import Blog from '../components/Blog'
 import blogs from '../data/blogs'
 import { author, blogPage } from '../config/website'

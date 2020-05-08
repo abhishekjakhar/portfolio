@@ -37,8 +37,7 @@ const About = () => (
     </Head>
     <div className="mb-12 u-flex f-column">
       <div className="mb-8 phone-mb-6 u-width100Percent">
-        <h2
-          className={`u-fontSize20 u-phone-fontSize18 u-fontWeightBold u-textColorDarker u-lineHeight26 u-letterSpacingHalf`}>
+        <h2 className="u-fontSize20 u-phone-fontSize18 u-fontWeightBold u-textColorDarker u-lineHeight26 u-letterSpacingHalf">
           {aboutHeading}
         </h2>
       </div>
@@ -54,10 +53,10 @@ const About = () => (
         </div>
       </div>
       <nav>
-        <ul className={`u-flex f-row`}>
+        <ul className="u-flex f-row">
           {socialMenu.map(item => (
             <li
-              className={`u-cursorPointer u-transition-all150Ease mr-4`}
+              className="u-cursorPointer u-transition-all150Ease mr-4"
               key={item.id.toString()}>
               <a
                 className="u-fontWeight u-textColorDarker link"

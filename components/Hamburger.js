@@ -2,12 +2,13 @@ import PropTypes from 'prop-types'
 
 const Hamburger = ({ isCollapsed, toggleHandler }) => (
   <button
+    type="button"
     className={`menu ${isCollapsed ? 'collapsed' : 'open'}`.trim()}
     aria-expanded={!isCollapsed ? 'true' : 'false'}
     onClick={() => toggleHandler(!isCollapsed)}>
-    <div className="menu-bar"></div>
-    <div className="menu-bar"></div>
-    <div className="menu-bar"></div>
+    <div className="menu-bar" />
+    <div className="menu-bar" />
+    <div className="menu-bar" />
     <style jsx>{`
       .menu {
         outline: none;

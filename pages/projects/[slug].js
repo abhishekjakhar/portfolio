@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
-import { getProjectBySlug, getAllProjects } from '../../lib/api'
 import PropTypes from 'prop-types'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
+import { getProjectBySlug, getAllProjects } from '../../lib/api'
 import Layout from '../../components/Layout'
 import ProjectTitle from '../../components/ProjectTitle'
 import ProjectSubTitle from '../../components/ProjectSubTitle'
@@ -79,13 +79,13 @@ Project.propTypes = {
     description: PropTypes.array,
     website: PropTypes.string,
     code: PropTypes.string,
-  }),
+  }).isRequired,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       slug: PropTypes.string,
     }),
-  ),
+  ).isRequired,
 }
 
 export async function getStaticProps({ params }) {
@@ -118,10 +118,10 @@ export async function getStaticPaths() {
   const projects = getAllProjects(['slug'])
 
   return {
-    paths: projects.map(projects => {
+    paths: projects.map(p => {
       return {
         params: {
-          slug: projects.slug,
+          slug: p.slug,
         },
       }
     }),
