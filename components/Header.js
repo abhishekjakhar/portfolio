@@ -39,20 +39,16 @@ const Header = () => {
             Abhishek Jakhar
           </a>
         </Link>
-        <ul className="u-lineHeight12 u-flex align-items-end justify-content-between u-phoneHide">
+        <ul className="u-flex align-items-end justify-content-between u-phoneHide">
           {navigation.map((item, index) => (
             <li
               key={`${item.name}-desktop`}
-              className={
-                index === 0
-                  ? 'u-lineHeight12'
-                  : 'u-lineHeight12 ml-5 phone-ml-3'
-              }>
+              className={index === 0 ? 'ml-0' : 'ml-3 phone-ml-3'}>
               <ActiveLink
                 href={item.link}
-                activeClassName="u-textColorDarkest"
+                activeClassName="link-active"
                 replace>
-                <a className="u-fontSize16 u-textColorNormal u-textColorDarkerHover u-transition--transform300Spring">
+                <a className="link u-fontSize16 u-textColorNormal u-textColorDarkerHover u-transition--transform300Spring">
                   {item.name}
                 </a>
               </ActiveLink>
@@ -89,6 +85,19 @@ const Header = () => {
           </nav>
         </div>
       ) : null}
+      <style jsx>{`
+        .link {
+          transition: all 250ms;
+          padding: 0.6rem 1rem;
+          border-radius: 4px;
+        }
+
+        .link:hover,
+        .link-active {
+          color: var(--text-color-darkest);
+          background-color: var(--color-link);
+        }
+      `}</style>
     </header>
   )
 }

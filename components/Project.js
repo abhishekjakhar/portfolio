@@ -5,8 +5,6 @@ import PropTypes from 'prop-types'
 const Project = props => {
   const { title, type, image, pathname } = props
 
-  const typeLength = props.type.length
-
   return (
     <article className="u-relative u-cursorPointer project">
       <Link as={`/projects/${pathname}`} href="/projects/[pathname]">
@@ -26,10 +24,7 @@ const Project = props => {
         </h2>
         <div>
           <p className="u-fontSize20 u-textColorDark u-fontWeightRegular">
-            {type.map((t, i) => {
-              if (typeLength === i + 1) return type
-              return `${t} / `
-            })}
+            {type.join(', ')}
           </p>
         </div>
       </div>

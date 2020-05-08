@@ -29,16 +29,6 @@ const ProjectNav = ({ projects }) => {
         li:not(:last-child) {
           margin-right: 2.4rem;
         }
-
-        li::before {
-          content: '•';
-          display: inline-block;
-          color: rgba(0, 0, 0, 0.8);
-          font-size: 1.8rem;
-          position: relative;
-          margin: 0 1rem 0 1rem;
-          height: 100%;
-        }
       `}</style>
     </nav>
   )

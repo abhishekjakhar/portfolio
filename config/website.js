@@ -23,8 +23,7 @@ export const errorSubHeadingTop =
 export const errorSubHeadingBottom =
   'looking for. Let’s find a better place for you to go.'
 
-export const aboutHeading =
-  "Hello, I'm Abhishek Jakhar, a Front-End Developer and Experience Designer."
+export const aboutHeading = "Hello, I'm Abhishek Jakhar."
 export const aboutCopyFirst =
   'I am a Front-End developer and UX designer, because I am intrinsically a problem solver. I believe that any problem can be solved through design thinking and when it comes to code I believe everything is possible with added complexity.'
 export const aboutCopySecond =

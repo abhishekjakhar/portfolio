@@ -37,8 +37,8 @@ const Button = ({ children, website }) => (
         font-size: 1.8rem;
         font-weight: 600;
         letter-spacing: 1.2px;
-        color: var(--text-color-darker);
-        background-color: var(--color-gray);
+        color: var(--text-color-darkest);
+        background-color: var(--color-link);
         border: 1px solid #e1e3e6;
         -webkit-transition: opacity 400ms;
         -o-transition: opacity 400ms;
