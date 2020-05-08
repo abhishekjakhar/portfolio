@@ -42,7 +42,7 @@ const Header = () => {
         <ul className="u-lineHeight12 u-flex align-items-end justify-content-between u-phoneHide">
           {navigation.map((item, index) => (
             <li
-              key={item}
+              key={`${item.name}-desktop`}
               className={
                 index === 0
                   ? 'u-lineHeight12'
@@ -76,7 +76,7 @@ const Header = () => {
               {navigation.map(item => (
                 <li
                   className="u-width100Percent u-textAlignCenter pt-2 pb-2"
-                  key={item}>
+                  key={`${item.name}-mobile`}>
                   <ActiveLink
                     activeClassName="u-textColorDarkest"
                     href={item.link}
