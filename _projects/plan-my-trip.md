@@ -5,7 +5,7 @@ subTitle:
   just running extension on any Text, Image or Video on internet. The extension
   uses Google Vision API, Video Intelligence API, Basetrip API and Yatra API in
   combination.'
-coverImage: '/assets/projects/plan-my-trip/plan-my-trip-bg.png'
+coverImage: '/static/images/plan-my-trip-bg.png'
 result: 'We were in top 3 teams out of more than 100 teams but, couldnt win it.'
 contribution:
   'I developed the Google chrome extension with 1 other designer at Yatra
@@ -15,7 +15,7 @@ description:
     {
       type: 'image',
       title: 'Plan my trip',
-      value: '/assets/projects/plan-my-trip/plan-my-trip-hero.png',
+      value: '/static/images/plan-my-trip-hero.png',
     },
     {
       type: 'message',
@@ -28,7 +28,7 @@ description:
     {
       type: 'image',
       title: 'Plan my trip',
-      value: '/assets/projects/plan-my-trip/plan-my-trip-image-1.png',
+      value: '/static/images/plan-my-trip-image-1.png',
     },
     {
       type: 'message',
@@ -45,7 +45,7 @@ description:
     {
       type: 'image',
       title: 'Plan my trip',
-      value: '/assets/projects/plan-my-trip/plan-my-trip-image-2.png',
+      value: '/static/images/plan-my-trip-image-2.png',
     },
     {
       type: 'message',
@@ -63,7 +63,7 @@ description:
     {
       type: 'image',
       title: 'Plan my trip',
-      value: '/assets/projects/plan-my-trip/plan-my-trip-image-3.png',
+      value: '/static/images/plan-my-trip-image-3.png',
     },
     {
       type: 'message',

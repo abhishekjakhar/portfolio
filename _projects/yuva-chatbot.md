@@ -4,7 +4,7 @@ subTitle:
   'Yuva chatbot helps in solving user queries like viewing itenary, cancellation
   charges, rescheduling charges, bookings, sending E-ticket etc. This single
   React application works on both desktop and mobile.'
-coverImage: '/assets/projects/yuva-chatbot/chatbot-bg.png'
+coverImage: '/static/images/chatbot-bg.png'
 result: 'Shipped as Yuva'
 contribution:
   'Created flow with a designer and product manager, and developed it entirely
@@ -12,13 +12,13 @@ contribution:
   700 lines only) withing 2 months.'
 description:
   - type: 'image'
-    value: '/assets/projects/yuva-chatbot/chatbot-hero.png'
+    value: '/static/images/chatbot-hero.png'
     title: 'Yuva Chatbot'
   - type: 'image'
-    value: '/assets/projects/yuva-chatbot/chatbot-image-1.png'
+    value: '/static/images/chatbot-image-1.png'
     title: 'Yuva Chatbot'
   - type: 'image'
-    value: '/assets/projects/yuva-chatbot/chatbot-image-2.png'
+    value: '/static/images/chatbot-image-2.png'
     title: 'Yuva Chatbot'
 website: 'https://www.yatra.com'
 code: ''

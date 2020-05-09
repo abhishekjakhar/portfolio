@@ -48,8 +48,8 @@ export default function ProjectBody({ description, website, code }) {
 }
 
 ProjectBody.defaultProps = {
-  website: false,
-  code: false,
+  website: '',
+  code: '',
 }
 
 ProjectBody.propTypes = {
