@@ -6,7 +6,7 @@ const Divider = () => (
       div {
         height: 1px;
         width: 100%;
-        margin: 6rem 0;
+        margin: 5rem 0;
         background-color: var(--color-link);
       }
     `}</style>

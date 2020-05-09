@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Button = ({ children, website }) => (
-  <a
+  <button
+    type="button"
     className="btn btn-cta"
     href={website}
     target="_blank"
@@ -39,13 +40,16 @@ const Button = ({ children, website }) => (
         letter-spacing: 1.2px;
         color: var(--text-color-darkest);
         background-color: var(--color-link);
-        border: 1px solid #e1e3e6;
-        -webkit-transition: opacity 400ms;
-        -o-transition: opacity 400ms;
-        transition: opacity 400ms;
+        border-radius: 4px;
+        opacity: 0.8;
+        transition: all 250ms;
+      }
+
+      .btn-cta:hover {
+        opacity: 1;
       }
     `}</style>
-  </a>
+  </button>
 )
 
 Button.propType = {

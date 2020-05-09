@@ -54,7 +54,7 @@ body.light {
   --color-link: #edf2f7;
 }
 
-body.dark {
+/* body.dark {
   --color-white: rgb(19, 20, 21);
   --color-black: #f0f3f5;
   --text-color-lighter: rgba(255, 255, 255, 0.3);
@@ -70,7 +70,7 @@ body.dark {
   --color-gray: #282c35;
   --bg-color: #171923;
   --color-link: rgba(255, 255, 255, 0.08);
-}
+} */
 
 #root {
   width: 100%;
@@ -78,14 +78,14 @@ body.dark {
 }
 
 body.light ::selection {
-  background: rgba(255, 113, 208, 0.2);
-  color: #241c15;
+  background-color: rgb(87, 62, 222);
+  color: rgb(255, 255, 255);
 }
 
-body.dark ::selection {
-  background: rgba(255, 113, 208, 0.55);
-  color: #fff;
-}
+/* body.dark ::selection {
+  background-color: rgb(71, 163, 243);
+  color: rgba(255, 255, 255);
+} */
 
 @media only screen and (max-width: 37.5em) {
   html {
@@ -393,6 +393,9 @@ a {
 /********** MARGIN TOP **********/
 .mt-2 {
   margin-top: 1rem;
+}
+.mt-10 {
+  margin-top: 5rem;
 }
 
 @media only screen and (max-width: 37.5em) {

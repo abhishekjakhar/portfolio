@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: 'Returning null from setState(Performance Upgrade)',
+    title: 'Returning null from setState',
     link:
       'https://blog.logrocket.com/returning-null-from-setstate-in-react-16-5fdb1c35d457',
     date: 'May 31, 2019',

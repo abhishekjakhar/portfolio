@@ -5,6 +5,8 @@ export default function ProjectBody({ description, website, code }) {
   return (
     <article>
       {description.map((element, index) => {
+        console.log('Length', description.length - 1)
+        console.log('Index Length', index)
         let innerContent = null
         if (element.type === 'image') {
           innerContent = (
@@ -34,15 +36,21 @@ export default function ProjectBody({ description, website, code }) {
           )
         }
         return (
-          <div className="mb-10 phone-mb-4" key={index.toString()}>
+          <div
+            className={
+              description.length - 1 !== index ? 'mb-10 phone-mb-4' : 'mb-0'
+            }
+            key={index.toString()}>
             {innerContent}
           </div>
         )
       })}
-      <div className="u-flex phone-f-column phone-mt-8">
-        {website && <Button website={website}>Project</Button>}
-        {code && <Button website={code}>Code</Button>}
-      </div>
+      {website || code ? (
+        <div className="u-flex phone-f-column mt-10">
+          {website && <Button website={website}>Project</Button>}
+          {code && <Button website={code}>Code</Button>}
+        </div>
+      ) : null}
     </article>
   )
 }

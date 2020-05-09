@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import ActiveLink from './ActiveLink'
 import Hamburger from './Hamburger'
-import ThemeSwitch from './ThemeSwitch'
 
 const navigation = [
   {
@@ -44,19 +43,13 @@ const Header = () => {
             <li
               key={`${item.name}-desktop`}
               className={index === 0 ? 'ml-0' : 'ml-3 phone-ml-3'}>
-              <ActiveLink
-                href={item.link}
-                activeClassName="link-active"
-                replace>
+              <ActiveLink href={item.link} activeClassName="link-active">
                 <a className="link u-fontSize16 u-textColorNormal u-textColorDarkerHover u-transition--transform300Spring">
                   {item.name}
                 </a>
               </ActiveLink>
             </li>
           ))}
-          <li className="ml-5 phone-ml-3">
-            <ThemeSwitch />
-          </li>
         </ul>
         <div className="u-phoneShow">
           <Hamburger
