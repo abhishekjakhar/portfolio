@@ -3,11 +3,11 @@ import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 const Project = props => {
-  const { title, type, image, pathname } = props
+  const { title, type, image, slug } = props
 
   return (
     <article className="u-relative u-cursorPointer project">
-      <Link as={`/projects/${pathname}`} href="/projects/[pathname]">
+      <Link href="/projects/[slug]" as={`/projects/${slug}`}>
         <a className="u-block u-width100Percent u-height100Percent">
           <figure className="image">
             <img
@@ -69,7 +69,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   type: PropTypes.arrayOf(PropTypes.string).isRequired,
   image: PropTypes.string.isRequired,
-  pathname: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
 }
 
 export default Project

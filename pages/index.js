@@ -13,7 +13,7 @@ export default function Home({ projects }) {
               title={p.title}
               type={p.type}
               image={p.coverImage}
-              pathname={p.slug}
+              slug={p.slug}
             />
           ))}
         <style jsx>{`
