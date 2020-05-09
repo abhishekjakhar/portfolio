@@ -5,8 +5,6 @@ export default function ProjectBody({ description, website, code }) {
   return (
     <article>
       {description.map((element, index) => {
-        console.log('Length', description.length - 1)
-        console.log('Index Length', index)
         let innerContent = null
         if (element.type === 'image') {
           innerContent = (
