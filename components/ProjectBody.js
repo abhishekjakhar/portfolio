@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Button from './button'
+import Button from './Button'
 
 export default function ProjectBody({ description, website, code }) {
   return (
