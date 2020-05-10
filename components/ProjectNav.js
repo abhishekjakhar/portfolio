@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ActiveLink from './active-link'
+import ActiveLink from './ActiveLink'
 
 const ProjectNav = ({ projects }) => {
   return (

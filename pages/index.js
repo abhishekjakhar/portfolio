@@ -1,6 +1,6 @@
 import { getAllProjects } from '../lib/api'
-import Layout from '../components/layout'
-import Project from '../components/project'
+import Layout from '../components/Layout'
+import Project from '../components/Project'
 
 export default function Home({ projects }) {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import ActiveLink from './active-link'
-import Hamburger from './hamburger'
+import ActiveLink from './ActiveLink'
+import Hamburger from './Hamburger'
 
 const navigation = [
   {
@@ -23,7 +23,7 @@ const navigation = [
 ]
 
 const Header = () => {
-  const [isMenuOpen, setisMenuOpen] = useState(false)
+  const [isMenuCollapsed, setIsMenuCollapsed] = useState(true)
 
   return (
     <header className="u-flex align-items-center u-width100Percent u-height80 u-top0 u-left0 u-backgroundColor u-zIndex9 sticky">
@@ -49,10 +49,13 @@ const Header = () => {
           ))}
         </ul>
         <div className="u-phoneShow">
-          <Hamburger isOpen={isMenuOpen} toggleHandler={setisMenuOpen} />
+          <Hamburger
+            isCollapsed={isMenuCollapsed}
+            toggleHandler={setIsMenuCollapsed}
+          />
         </div>
       </nav>
-      {isMenuOpen ? (
+      {!isMenuCollapsed ? (
         <div className="u-fixed u-backgroundColorWhite u-bottom0 u-left0 u-width100Percent u-height100Percent u-zIndex1">
           <nav className="u-relative u-width100Percent u-height100Percent">
             <ul className="u-flex f-column align-items-center u-width100Percent u-absolute u-top50Percent u-transformYNegative50pct">
