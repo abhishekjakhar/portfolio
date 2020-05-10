@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Button = ({ children, website }) => (
-  <button
-    type="button"
+  <a
     className="btn btn-cta"
     href={website}
     target="_blank"
@@ -49,7 +48,7 @@ const Button = ({ children, website }) => (
         opacity: 1;
       }
     `}</style>
-  </button>
+  </a>
 )
 
 Button.propType = {

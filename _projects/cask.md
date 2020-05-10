@@ -17,7 +17,7 @@ description:
     value: '/static/images/cask-image-1.png'
     title: 'CASK'
 website: 'https://www.caskassociates.com'
-code: 'https://github.com/abhishekjakhar/scoreboard'
+code: ''
 type:
   - React
   - UI

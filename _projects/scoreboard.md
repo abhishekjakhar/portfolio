@@ -8,7 +8,7 @@ description:
   - type: 'image'
     value: '/static/images/scoreboard-hero.png'
     title: 'Scoreboard'
-website: 'https://react-score.netlify.com'
+website: 'https://stupefied-kepler-b5dc1b.netlify.app'
 code: 'https://github.com/abhishekjakhar/scoreboard'
 type:
   - UI
