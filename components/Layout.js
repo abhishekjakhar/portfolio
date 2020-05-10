@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import Meta from './Meta'
-import Header from './Header'
-import Container from './Container'
+import Meta from './meta'
+import Header from './header'
+import Container from './container'
 
 export default function Layout({ children }) {
   return (

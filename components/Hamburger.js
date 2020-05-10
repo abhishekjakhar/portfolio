@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 
-const Hamburger = ({ isCollapsed, toggleHandler }) => (
+const Hamburger = ({ isOpen, toggleHandler }) => (
   <button
     type="button"
-    className={`menu ${isCollapsed ? 'collapsed' : 'open'}`.trim()}
-    aria-expanded={!isCollapsed ? 'true' : 'false'}
-    onClick={() => toggleHandler(!isCollapsed)}>
+    className={`menu ${isOpen ? 'open' : 'collapsed'}`.trim()}
+    aria-expanded={!isOpen ? 'false' : 'true'}
+    onClick={() => toggleHandler(!isOpen)}>
     <div className="menu-bar" />
     <div className="menu-bar" />
     <div className="menu-bar" />
@@ -51,7 +51,7 @@ const Hamburger = ({ isCollapsed, toggleHandler }) => (
 )
 
 Hamburger.propTypes = {
-  isCollapsed: PropTypes.bool.isRequired,
+  isOpen: PropTypes.bool.isRequired,
   toggleHandler: PropTypes.func.isRequired,
 }
 
