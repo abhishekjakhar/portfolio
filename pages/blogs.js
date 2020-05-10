@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
-import Blog from '../components/Blog'
+import Layout from '../components/layout'
+import Blog from '../components/blog'
 import blogs from '../data/blogs'
 import { author, blogPage } from '../config/website'
 
