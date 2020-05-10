@@ -26,7 +26,7 @@ const Header = () => {
   const [isMenuOpen, setisMenuOpen] = useState(false)
 
   return (
-    <header className="u-flex align-items-center u-width100Percent u-height80 u-top0 u-left0 u-backgroundColor u-zIndex9">
+    <header className="u-flex align-items-center u-width100Percent u-height80 u-top0 u-left0 u-backgroundColor u-zIndex9 sticky">
       <nav className="u-flex justify-content-between align-items-center u-width100Percent u-height100Percent mx-auto u-maxWidth980 tabLand-pl-6 tabLand-pr-6 phone-pl-3 phone-pr-3 u-relative u-zIndex5">
         <Link href="/">
           <a
@@ -75,6 +75,11 @@ const Header = () => {
         </div>
       ) : null}
       <style jsx>{`
+        header.sticky {
+          position: sticky;
+          top: 0;
+        }
+
         .link {
           transition: all 250ms;
           padding: 0.6rem 1rem;
