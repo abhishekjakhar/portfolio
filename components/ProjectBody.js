@@ -12,7 +12,7 @@ export default function ProjectBody({ description, website, code }) {
               <img
                 src={element.value}
                 alt={element.title}
-                className="u-width100Percent u-height100Percent u-block mx-auto"
+                className="u-width100Percent u-block mx-auto"
                 key={index.toString()}
               />
             </figure>
