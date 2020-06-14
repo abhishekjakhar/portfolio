@@ -1,6 +1,6 @@
 import '../styles/index.css'
 import Router from 'next/router'
-import Progress from '../components/progress'
+import Progress from '../components/Progress'
 
 import * as gtag from '../lib/gtag'
 

@@ -22,7 +22,7 @@ const navigation = [
   },
 ]
 
-const Header = () => {
+export default function Header() {
   const [isMenuCollapsed, setIsMenuCollapsed] = useState(true)
 
   return (
@@ -98,5 +98,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header

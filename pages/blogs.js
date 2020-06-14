@@ -4,7 +4,7 @@ import Blog from '../components/Blog'
 import blogs from '../data/blogs'
 import { author, blogPage } from '../config/website'
 
-const Blogs = () => {
+export default function Blogs() {
   return (
     <Layout>
       <Head>
@@ -28,5 +28,3 @@ const Blogs = () => {
     </Layout>
   )
 }
-
-export default Blogs

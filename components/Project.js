@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-const Project = props => {
+export default function Project(props) {
   const { title, type, image, slug } = props
 
   return (
@@ -71,5 +71,3 @@ Project.propTypes = {
   image: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 }
-
-export default Project

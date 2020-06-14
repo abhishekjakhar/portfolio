@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ActiveLink from './ActiveLink'
 
-const ProjectNav = ({ projects }) => {
+export default function ProjectNav({ projects }) {
   return (
     <nav>
       <ul className="u-flex f-row f-wrap">
@@ -40,5 +40,3 @@ ProjectNav.propTypes = {
     }),
   ).isRequired,
 }
-
-export default ProjectNav
