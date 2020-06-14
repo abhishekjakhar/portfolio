@@ -16,7 +16,7 @@ Router.events.on('routeChangeStart', start)
 Router.events.on('routeChangeComplete', done)
 Router.events.on('routeChangeError', done)
 
-export default function Progress() {
+export default function ProgressBar() {
   return (
     <style jsx global>
       {`
