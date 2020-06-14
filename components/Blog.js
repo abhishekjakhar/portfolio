@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Blog = props => {
+export default function Blog(props) {
   const { link, title, date, readTime, publication } = props
 
   return (
@@ -36,5 +36,3 @@ Blog.propTypes = {
   readTime: PropTypes.number.isRequired,
   publication: PropTypes.string.isRequired,
 }
-
-export default Blog

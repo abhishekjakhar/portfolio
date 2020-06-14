@@ -7,7 +7,7 @@ import Divider from '../components/Divider'
 import resume from '../data/resume'
 import { author, resumePage } from '../config/website'
 
-const Resume = () => {
+export default function Resume() {
   const { work, education, skills, certification } = resume
   return (
     <Layout>
@@ -107,5 +107,3 @@ const Resume = () => {
     </Layout>
   )
 }
-
-export default Resume

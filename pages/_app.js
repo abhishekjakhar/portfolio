@@ -1,6 +1,6 @@
 import '../styles/index.css'
 import Router from 'next/router'
-import Progress from '../components/progress'
+import ProgressBar from '../components/ProgressBar'
 
 import * as gtag from '../lib/gtag'
 
@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <Progress />
+      <ProgressBar />
     </>
   )
 }
