@@ -5,7 +5,7 @@ subTitle:
   name of Sandeep Kumar and Associates. The website is user friendly and
   developed using React.'
 coverImage: '/static/images/cask-bg.png'
-result: 'Desgined in a month. Developed and released within 2 months.'
+result: 'Desgined in a month, developed and launched within 2 months.'
 contribution: ''
 description:
   - type: 'image'
