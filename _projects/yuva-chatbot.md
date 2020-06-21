@@ -7,9 +7,8 @@ subTitle:
 coverImage: '/static/images/chatbot-bg.png'
 result: 'Shipped as Yuva'
 contribution:
-  'Created flow with a designer and product manager, and developed it entirely
-  by myself from scratch using React, Redux and custom Tailwind CSS(less than
-  700 lines only) withing 2 months.'
+  'Developed it from scratch using React and Redux within 2 months. Also, helped
+  the designer in creating better UI/UX'
 description:
   - type: 'image'
     value: '/static/images/chatbot-hero.png'
