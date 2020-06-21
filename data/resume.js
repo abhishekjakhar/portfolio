@@ -36,7 +36,7 @@ export default {
   work: [
     {
       year: '10/19 - Present',
-      company: 'Expedia Group',
+      company: 'VRBO(Expedia Group)',
       position: 'Software Development Engineer',
       list: [
         'Working on post booking experience.',
@@ -49,14 +49,14 @@ export default {
       company: 'Yatra',
       position: 'UI/UX Engineer',
       list: [
-        'Designed, developed and launched chatbot for Yatra support using React, Redux and custom Tailwind CSS(750 lines only) within a 2 month sprint.',
-        'Developed Quicksilver the complete redesign of Yatra using React, Redux and custom Tailwind CSS from scratch with one more developer, designer and my manager, we together created new design and flow for Flights & Hotels providing very smooth and extremely fast single page application. CSS reflected our design guidelines. We made our own components to avoid importing heavy libraries',
+        'Designed, developed and launched chatbot for Yatra.com support using React and Redux within a 2 month sprint.',
+        'Developed Quicksilver the complete redesign of Yatra.com using React and Redux from scratch with one more developer, designer, we together created new design and flow for Flights & Hotels providing very smooth and extremely fast experience. It could not go live but will always remain in our heart.',
       ],
     },
     {
       year: '01/18 - 06/18',
       company: 'Yatra',
-      position: 'UI/UX Design Intern',
+      position: 'UI/UX Engineering Intern',
       list: [
         'Developed ASI monuments reponsive website using Angular, SCSS/SASS and BEM methodology.',
         "Developed a google chrome extension called PlanMyTrip as hackathon project where a user could make itenary using any text or image found on internet, by using Google's Text and Vision API.",
@@ -87,18 +87,15 @@ export default {
       type: 'Development',
       list: [
         'React',
-        'Next',
-        'HTML',
-        'CSS',
-        'GraphQL',
         'JavaScript',
-        'Redux',
-        'Sass',
-        'Bootstrap',
+        'HTML',
+        'CSS/Sass',
         'Testing',
+        'GraphQL',
+        'Next',
+        'Redux',
+        'Bootstrap',
         'jQuery',
-        'Node',
-        'Express',
       ],
     },
     {
@@ -109,13 +106,8 @@ export default {
         'Design thinking',
         'Basic research',
         'Wireframing',
-        'Basic UI',
         'Responsive design',
       ],
-    },
-    {
-      type: 'Software',
-      list: ['Git', 'Github', 'Vim', 'Sketch'],
     },
     {
       type: 'Hobbies',
