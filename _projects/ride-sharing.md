@@ -4,7 +4,9 @@ subTitle:
   'An app to let users share commuting costs with neighbors and colleagues
   headed the same way.'
 coverImage: '/static/images/ride-sharing-bg.png'
-result: ''
+result:
+  'I was able to understand how UX designers create products that provide
+  meaningful and relevant experiences to users.'
 contribution: ''
 description:
   [

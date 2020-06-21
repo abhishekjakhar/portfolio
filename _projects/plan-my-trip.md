@@ -6,7 +6,8 @@ subTitle:
   uses Google Vision API, Video Intelligence API, Basetrip API and Yatra API in
   combination.'
 coverImage: '/static/images/plan-my-trip-bg.png'
-result: 'We were in top 3 teams out of more than 100 teams but, couldnt win it.'
+result:
+  'We were in top 3 teams out of more than 100 teams but, could not win it.'
 contribution:
   'I developed the Google chrome extension with 1 other designer at Yatra
   Hacktahon.'
