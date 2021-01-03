@@ -2,9 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
 
-export default function Project(props) {
-  const { title, type, image, slug } = props
-
+export default function Project({ title, type, image, slug }) {
   return (
     <article className="u-relative u-cursorPointer project">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">

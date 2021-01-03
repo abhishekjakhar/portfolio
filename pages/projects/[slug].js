@@ -76,7 +76,7 @@ Project.propTypes = {
     type: PropTypes.arrayOf(PropTypes.string),
     result: PropTypes.string,
     contribution: PropTypes.string,
-    description: PropTypes.array,
+    description: PropTypes.arrayOf(PropTypes.object),
     website: PropTypes.string,
     code: PropTypes.string,
   }).isRequired,

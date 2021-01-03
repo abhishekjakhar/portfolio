@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function Blog(props) {
-  const { link, title, date, readTime, publication } = props
-
+export default function Blog({ link, title, date, readTime, publication }) {
   return (
     <article className="pl-0 pr-0 u-transition-all150Ease u-cursorPointer u-inlineBlock u-transform-translateXHover">
       <a
