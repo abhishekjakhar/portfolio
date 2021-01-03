@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import ActiveLink from './ActiveLink'
 import Hamburger from './Hamburger'

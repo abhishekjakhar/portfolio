@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function Blog({ link, title, date, readTime, publication }) {
