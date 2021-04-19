@@ -35,13 +35,24 @@ export default {
   ],
   work: [
     {
-      year: '10/19 - Present',
-      company: 'VRBO(Expedia Group)',
+      year: '04/21 - Present',
+      company: 'VRBO (Expedia Group)',
+      position: 'UX Engineer - II',
+      list: ['Working on link sharing feature of Guests of Guests widget'],
+    },
+    {
+      year: '10/19 - 03/21',
+      company: 'VRBO (Expedia Group)',
       position: 'Software Development Engineer',
       list: [
-        'Working on post booking experience.',
-        'Delivered a tech talk on React Hooks.',
-        'Worked on checkout page and A/B test around it.',
+        'Took ownership of integrating client side error logging, in which I created Error boundary component and integrated Sentry and Datadog with Error boundary. Also, I integrated Pager duty with Sentry and Datadog.',
+        'Worked on UI of Guest of Guests widget and introduced new modal for adding guests to a reservation',
+        'Developed the booking modification and booking request emails for booking modification flow.',
+        'Worked on booking modification feature in which I created UI of booking modification and integrated GraphQL queries and mutations.',
+        'Took ownership and introduced react testing library in our project, now almost half of the components are migrated to RTL from Enzyme.',
+        'Delivered a tech talk on React hooks',
+        'Worked in eventing squad to quickly integrate the events in UI application for data analyst.',
+        'Worked on checkout experience of VRBO and A/B tests around checkout input fields.',
       ],
     },
     {
@@ -49,8 +60,9 @@ export default {
       company: 'Yatra',
       position: 'UI/UX Engineer',
       list: [
-        'Designed, developed and launched chatbot for Yatra.com support using React and Redux within a 2 month sprint.',
-        'Developed Quicksilver the complete redesign of Yatra.com using React and Redux from scratch with one more developer, designer, we together created new design and flow for Flights & Hotels providing very smooth and extremely fast experience. It could not go live but will always remain in our heart.',
+        'Developed a chatbot for customer support using React and Tailwind CSS.',
+        'Designed and Developed Quicksilver, the redesign of Flights and Hotels flow of Yatra, using React and Redux.',
+        'Developed node controller to server side render the payments page of Quicksilver.',
       ],
     },
     {
@@ -115,6 +127,14 @@ export default {
     },
   ],
   certification: [
+    {
+      year: '11/20 - present',
+      program: 'Epic React by Kent C.Dodds',
+    },
+    {
+      year: '08/20 - present',
+      program: 'Testing JavaScript with Kent C.Dodds',
+    },
     {
       year: '09/16 - present',
       institution: 'The Hong Kong University of Science & Technology',

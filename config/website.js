@@ -25,7 +25,7 @@ export const errorSubHeadingBottom =
 
 export const aboutHeading = "Hello, I'm Abhishek Jakhar."
 export const aboutCopyFirst =
-  'I am a Front-End developer and UX designer, because I am intrinsically a problem solver. I believe that any problem can be solved through design thinking and when it comes to code I believe everything is possible with added complexity.'
+  'I am a JavaScript developer that focuses on front end framework such as React and Next. I have a passion for CSS, UX, Testing Javascript and Web Accessibility. To grow my skills I do open source, read and write blogs and watch frontend masters lectures.'
 export const aboutCopySecond =
   'I love to structure things in real-life, because of this quality my design and my code always complement each other.'
 export const aboutCopyThird =
